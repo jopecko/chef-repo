@@ -19,11 +19,5 @@
 #
 
 include_recipe "java"
-
-case node.platform
-when "centos","redhat","fedora"
-  include_recipe "tomcat::ark"
-when "debian","ubuntu"
-  include_recipe "tomcat::package"
-end
+include_recipe "tomcat::ark"
 
