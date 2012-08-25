@@ -1,0 +1,11 @@
+# ICMP
+-A FWR -p icmp -j ACCEPT
+
+# HTTP
+-A FWR -p tcp --dport 80 -j ACCEPT
+
+# HTTPS
+-A FWR -p tcp --dport 443 -j ACCEPT
+
+# SSH
+-A FWR -p tcp --sport ssh -j ACCEPT
